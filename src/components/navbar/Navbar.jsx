@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 function Navbar() {
     return (
-        <Menu>
+        <Menu right>
         </Menu>
     );
 }
