@@ -3,8 +3,8 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    right: 36px;
-    top: 36px;
+    left: 36px;
+    top: 28px;
 }
 
 /* Color/shape of burger icon bars */
@@ -118,4 +118,43 @@
 
 .text-contact-menu {
     padding-left: 1px;
+}
+
+.Navbar-container {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.Btn-blue {
+    background-color: #87CEFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.Btn-green {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.Icon-image {
+    width: 100%;
+}
+
+.Bottom-icons {
+    width: 10%;
 }
