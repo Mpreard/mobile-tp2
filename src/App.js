@@ -24,11 +24,12 @@ function App() {
         }, [user]
     )
 
+    if(authState === 'login') return <Login setUser={setUser} setAuthState={setAuthState}/>
+    if(authState === 'register') return <Register setUser={setUser} setAuthState={setAuthState}/>
+
     return <Home />
 /*
     if(authState === null) return <div>loading....</div>
-    if(authState === 'login') return <Login setUser={setUser} setAuthState={setAuthState}/>
-    if(authState === 'register') return <Register setUser={setUser} setAuthState={setAuthState}/>
     if(user) return <Home user={user} setUser={setUser} setAuthState={setAuthState}/> */
 }
 

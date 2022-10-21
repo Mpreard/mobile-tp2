@@ -1,8 +1,9 @@
-import { signOut } from "firebase/auth";
-import { auth } from "../firebase";
+import Map from '../components/map/Map';
 
 function Home ({ user, setAuthState, setUser }) {
+    /*
     const signOutHandler = () => {
+
         signOut(auth).then(() => {
             setUser(null)
             setAuthState('login')
@@ -10,10 +11,10 @@ function Home ({ user, setAuthState, setUser }) {
             .catch((err) => {
                 alert(err)
             })
-    }
+    }      */
     return (
         <div>
-
+            <Map />
         </div>
     )
 }

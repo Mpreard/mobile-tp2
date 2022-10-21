@@ -6,8 +6,6 @@ import pb from "../../assets/images/pb.png";
 import stack from "../../assets/images/stack.png";
 import uppa from "../../assets/images/uppa.png";
 import logo from "../../assets/images/opencems.png";
-import {auth} from "../../firebase.js";
-import {signInWithEmailAndPassword} from "firebase/auth";
 import {useState} from "react";
 
 function Login({setUser, setAuthState}) {
@@ -16,12 +14,16 @@ function Login({setUser, setAuthState}) {
 
     const onSignInHandle = () => {
         if (email && password) {
+            /*
             signInWithEmailAndPassword(auth, email, password).then(() => {
                 setUser(email)
                 setAuthState('home')
             }).catch((err) => {
                     alert(err)
             })
+
+             */
+            setAuthState('home')
         }
     }
 
