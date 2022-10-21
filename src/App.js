@@ -1,11 +1,12 @@
 import './App.css';
-import HomeView from './views/home/Home';
+import Router from './components/navigation/rooter/Rooter'
 
 function App() {
   return (
-    <div className="App">
-      <HomeView />
-    </div>
+      <div className='App'>
+        <Router />
+      </div>
+
   );
 }
 
